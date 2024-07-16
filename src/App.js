@@ -1,14 +1,14 @@
-
-import './App.css';
+import './App.css'
+import Clock from './Clock'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       React Clock
-      </header>
-    </div>
-  );
-}
-
+    <>
+      <main>
+        React JavaScript
+      </main>
+      <Clock />
+    </>
+  )
+};
 export default App;
