@@ -1,6 +1,7 @@
 import { useState } from "react";
-
-const Clock = () => {
+import ClockContent from "./Clock_Content";
+import "./App.css";
+const ClockFunctionality = () => {
   let [hours, setHours] = useState("");
   let [minutes, setMinutes] = useState("");
   let [seconds, setSeconds] = useState("");
@@ -10,24 +11,25 @@ const Clock = () => {
     let getMinutes = time.getMinutes().toString();
     let getSeconds = time.getSeconds().toString();
     if (getHours.length === 1) {
-      getHours = "0" + getHours
+      getHours = "0" + getHours;
     }
     setHours(getHours);
     if (getMinutes.length === 1) {
-      getMinutes = "0" + getMinutes
+      getMinutes = "0" + getMinutes;
     }
     setMinutes(getMinutes);
     if (getSeconds.length === 1) {
-      getSeconds = "0" + getSeconds
+      getSeconds = "0" + getSeconds;
     }
     setSeconds(getSeconds);
   }
-  setInterval(times, 0)
+  setInterval(times, 0);
   return (
-    <div>
-      <h5>Digital Clock</h5>
-      <h4>{hours} : {minutes} : {seconds}</h4>
-    </div>
-  )
-}
-export default Clock;
+  <ClockContent 
+  hours={hours} 
+  minutes={minutes} 
+  seconds={seconds} />
+     );
+};
+
+export default ClockFunctionality;

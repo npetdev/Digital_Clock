@@ -1,13 +1,10 @@
 import './App.css'
-import Clock from './Clock'
+import ClockFunctionality from './Clock_Functionality'
 
 function App() {
   return (
     <>
-      <main>
-        React JavaScript
-      </main>
-      <Clock />
+      <ClockFunctionality />
     </>
   )
 };

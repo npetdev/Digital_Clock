@@ -1,5 +1,33 @@
-main, div {
-  text-align: center;
-  vertical-align: center;
-  
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: #61dafb;
+}
+
+.react-text {
+  color: #61dafb;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  margin: 0;
+}
+
+.time-display {
+  display: flex;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.time {
+  padding: 0 10px;
+}
+
+.separator {
+  color: #61dafb;
 }
