@@ -24,12 +24,7 @@ const ClockFunctionality = () => {
     setSeconds(getSeconds);
   }
   setInterval(times, 0);
-  return (
-  <ClockContent 
-  hours={hours} 
-  minutes={minutes} 
-  seconds={seconds} />
-     );
+  return <ClockContent hours={hours} minutes={minutes} seconds={seconds} />;
 };
 
 export default ClockFunctionality;

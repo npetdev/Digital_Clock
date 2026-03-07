@@ -1,11 +1,7 @@
-import './App.css'
-import ClockFunctionality from './Clock_Functionality'
+import "./App.css";
+import ClockFunctionality from "./Clock_Functionality";
 
 function App() {
-  return (
-    <>
-      <ClockFunctionality />
-    </>
-  )
-};
+  return <ClockFunctionality />;
+}
 export default App;
